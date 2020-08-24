@@ -9,7 +9,6 @@ body {
 }
 header {
     background-color: black;
-    /* opacity: 0.8; */
 
 }
 main {
@@ -121,7 +120,7 @@ footer p {
     background-color: #000;
   }
   
-  .facebook {
+ .facebook {
     background: #3B5998;
     color: white;
   }
@@ -211,9 +210,7 @@ z-index: 10000;
 
    
  .catch {
-  
     opacity: 0;
-
     animation: fadeIn 4s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
