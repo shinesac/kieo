@@ -210,7 +210,19 @@ z-index: 10000;
  }
 
    
+ .catch {
+  
+    opacity: 0;
 
+    animation: fadeIn 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
   
 
 @media screen and (min-width: 1200px) {
@@ -281,4 +293,4 @@ z-index: 10000;
     
 
      }
-      }
+      
