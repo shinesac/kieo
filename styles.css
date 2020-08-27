@@ -320,26 +320,28 @@ z-index: 10000;
     
 }
 
-#reports ul, 
-#domain ul,
-#consultation ul,
-#maintainence ul,
-#website ul {
-    /* margin: 5%; */
-    }
-    /* #reports, 
-    #domain,
-    #consultation,
-    #maintainence,
-    #website {
-        width: 80%;
-        align-self: center;
-    } */
 .fa-check-circle {  
     color: green;
     margin-right: 5px;
 
 }
+
+#directbtn{
+    display: block;
+    margin: 0 auto;
+    padding: 5%;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.15rem;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    border-radius: 5px;
+    border-width: 1px 1px 3px;
+   }
+
 /* style about page */
 #about{
     padding-bottom: 0;
