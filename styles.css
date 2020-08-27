@@ -32,24 +32,14 @@ nav li {
 
 
 #logo {
-    /* max-width:  350px;
-    max-height: 350px;   */
-    /* position: absolute;
-    top: 2%;
-    left: 1%; */
-    margin: 0 auto;
+     margin: 0 auto;
     display: block;
-    /* margin-top: 3%;
-    padding-bottom: 6%; */
    border: royalblue solid 5px;
    border-radius: 50%;
    height: 90px;
    width: 90px;
    position: absolute;
-   /* z-index: 2;
-   top: 100px;
-   left: 47vw; */
-   top: 3%;
+     top: 3%;
    left: 1%;
    z-index: 10000;
 }
@@ -94,6 +84,7 @@ footer {
     justify-content: center;   
     line-height: 1.15;
     padding: 0;
+   
 }
 
 #kieologo {
@@ -235,35 +226,11 @@ z-index: 10000;
   
 
 /* style services page */
-#servicepic {
-    content: "";
-    background-image: url(city.png);
-    background-size: cover;
-    background-color: black;
-    margin-top:0;
-    padding-top:10%;
-    padding-bottom: 10%;
-    opacity: 0.80;
-}
 
-#servicepic p {
-    text-shadow: black 5px 5px;
-    opacity: 1;
-    color: yellow;
-}
 
-.list {
-    background-color: black;
-    border-radius: 80%;
-    padding: 3%;
-    width: 35%;
-    margin: 0 auto;
-    display: block;
-    opacity: 0.7;
-    padding-bottom: 10%;
-}
+
 #services {
-    padding-bottom: 0;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -271,6 +238,7 @@ z-index: 10000;
     justify-content: space-between;
     margin-right: 2%;
     align-items: flex-start;
+
    
 }
 
@@ -339,7 +307,7 @@ z-index: 10000;
     font-size: 1.15rem;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     border-radius: 5px;
-    border-width: 1px 1px 3px;
+    border-width: 1px 1px 3px;2
    }
 
 /* style about page */
