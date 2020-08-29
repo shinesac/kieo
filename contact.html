@@ -58,7 +58,7 @@
                 <li> <a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="#">Portfolio</a></li>   
-                <li><a href="#">Pricing</a></li> 
+                <li><a href="pricing.html">Specials</a></li> 
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
@@ -67,8 +67,145 @@
     </header>
 
     <main id="home">
+       
+        <!-- <h1>Please use our facebook page to book a free consultation!</h1> -->
         
+        <p> Fill out the form below to request a free consultation</p>
+        <p>If you have any questions, call us at (865) 307-3944</p>
+
+
+        <form action="https://formspree.io/maypzqnv" name ="form" method="post" class="form">
+           
+         
+                    <!-- <label for="company"><span style= "color:red;font-weight:bold;">*</span>Organization:</label> -->
+                  <input type="text" id="company" name="company" class="company" required="text" placeholder="Organization Name">
         
+              <!-- <div class="contact" id="contact"> -->
+                  <!-- <label for="firstname"><span style= "color:red;font-weight:bold;">*</span>First Name:</label> -->
+                  <input type="text" id="firstname" name="firstname" class="required" required="text" placeholder="First Name">
+              <!-- </div> -->
+              <!-- <div> -->
+                  <!-- <label for="lastName"><span style="color:red;font-weight:bold;">*</span>Last Name:</label> -->
+                  <input type ="text" id="lastName" name="lastName" class="required" required="text" placeholder="Last Name">
+              <!-- </div> -->
+           <!-- </div> -->
+          
+               <!-- <div> -->
+                  <!-- <label for="phone">Phone:</label> -->
+                  <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+               <!-- </div> -->
+               <!-- <div> -->
+                  <!-- <label for="email"> E-mail:</label> -->
+                  <input type="email" name="email" id="email" placeholder="E-mail Address" >
+                <!-- </div> -->
+              <!-- </div> -->
+
+            <div class="contact">
+                  <label for="preferredcontact" >Preferred Contact Method:</label> 
+
+                  <input type="radio" name="preferredcontact" id="preferredcontacttel" value="Phone">
+                  <label for="preferredcontacttel" style="margin-right: 10px;">Phone</label>
+                 
+                  <input type="radio" name="preferredcontact" id="preferredcontactmail" value="E-mail">
+                  <label for="preferredcontactmail">E-mail</label> 
+                 
+            </div><br>
+
+            <div id="radio">
+                  <label for="hear">How did you hear about KIEO:</label> <br>
+
+                  <input type="radio" name="hear" id="friend" value="Friend/Family">
+                  <label for="friend" class="space">Friend/Family</label><br>
+
+                  <input type="radio" name="hear" id="social" value="Social Media">
+                  <label for="social" class="space">Social Media</label><br>
+
+                  <input type="radio" name="hear" id="search" value="Web Search">
+                  <label for="search" class="space">Web Search</label><br>
+            </div>
+
+                <div class="radiobtn">
+                  <input type="radio" name="hear" id="referral" value="Referral">
+                  <label for="referral" class="space"> Referral</label>
+
+                  <input type ="text" id="ref" name="ref" placeholder="Name of KIEO customer that referred you">
+                </div>
+
+                <div class="radiobtn">
+                  <input type="radio" name="hear" id="other" value="Other">
+                  <label for="other" class="space"> Other:</label>
+                  
+                  <label for="write"></label>
+                  <input type ="text" id="write" name="write">
+                </div>   
+            </div><br>
+<!-- 
+            <div class="check">
+                <label for="features">What features are you looking for:</label> <br>
+                <input type="checkbox" name="features" id="slideshow" value="slideshow">
+                <label for="slideshow" class="space">Slideshow</label>
+                <input type="checkbox" name="features" id="gallery" value="gallery">
+                <label for="gallery" class="space">Gallery</label>
+                <input type="checkbox" name="features" id="video" value="video">
+                <label for="video" class="space">Video</label>
+                <input type="checkbox" name="features" id="contform" value="Contact Form">
+                <label for="contform" class="space">Contact Form</label>
+                <input type="checkbox" name="features" id="animation" value="animation">
+                <label for="animation" class="space">Custom Animation</label>
+                           
+                <input type="checkbox" name="hear" id="other" value="Other">
+                <label for="other" class="space">Other:</label>
+                <label for="write"></label>
+                <input type ="text" id="write" name="write">
+                
+          </div><br>
+
+          <div class="check">
+            <label for="services">Are you interested in the following services?</label> <br>
+            
+            <input type="checkbox" name="services" id="data" value="data reports">
+            <label for="data" class="space">Data Reports - $15/month or $120/year</label>
+           
+            <input type="checkbox" name="services" id="maintainence" value="Website Maintainence">
+            <label for="maintainence" class="space">Website Maintainence - $60/year</label>
+           
+            <input type="checkbox" name="services" id="google" value="google">
+            <label for="google" class="space">Google Business Set-Up - Free</label>
+            
+            <input type="checkbox" name="features" id="domain" value="domain">
+            <label for="domain" class="space">Custom Domain Name - $12/year</label>
+            
+    
+            
+      </div><br>
+
+
+            <div>
+                <label for="pages">How many pages would you like your website to be?</label>
+                  <input type="number" id="pages" name="pages">
+
+            </div>
+
+            <div id="finance">
+                <label for="pay">Are you interested in an installment plan?</label> <br>
+                   <label for="yes" class="space">Yes</label>
+                  <input type="radio" name="yes" id="yes" value="Yes">
+                  <label for="no" class="space">No</label> 
+                  <input type="radio" name="no" id="no" value="No"> 
+            </div>
+            <label for="info">Short description of your organization:</label>
+          <textarea id="info" name="info"> </textarea> -->
+        <label for="comments">Any additional information you think we should know:</label>
+          <textarea id="comments" name="comments"> </textarea>
+                        
+          <button type="submit" name="submit" class="submit" id="submit" onclick="reportClickHandler()">Request Your Free Consultation</button>
+      
+      <!-- <p id="reqfield"><span style="color:red;font-weight:bold;">*</span>Required Fields</p> -->
+        </form>
+        <div class="icon-bar">
+            <a href="https://fb.com/book/kieowebsolutions/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+    </main>    
     </footer>
 
 </body>

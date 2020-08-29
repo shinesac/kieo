@@ -227,29 +227,67 @@ z-index: 10000;
 
 /* style services page */
 
+#services h1{
+    color:black;
+    text-shadow: none;
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+    }
 
+#icons div{
+    align-content: center;
+}    
+.icon{
+    width: 50px;
+    height: 50px;
+    border: silver 5px solid;
+    border-radius: 50%;
+    padding: 6%;
+    display: block;
+    margin: 0 auto;
+    }
+button{
+    margin-top: 5%;
+    
+}
 
-#services {
-    padding-bottom: 5%;
+#icons {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    align-items: center;
+    flex-wrap: wrap;
+    /* min-height: 100vh; */
+}
+
+#descriptions {
+    /* padding-bottom: 5%; */
+    display: block;
+    /* flex-direction: row;
     flex: 1;
-    margin-top: 2%;
-    justify-content: space-between;
+    margin-top: 2%; */
+    /* justify-content: space-between;
     margin-right: 2%;
-    align-items: flex-start;
+    align-items: flex-start; */
 
    
 }
 
-#services div{
-    display: flex;
+#descriptions div{
+    /* display: flex;
     flex: 1;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    min-height: 100vh;
+  
     
 }
 
-#maintainence h1
+/* #maintainence h1
  {
     margin-top: 20%;  
     
@@ -257,7 +295,7 @@ z-index: 10000;
 
 #consultation h1 {
     margin-top: 15%;
-}
+} */
 
 .list a {
     text-decoration: none;
@@ -285,6 +323,7 @@ z-index: 10000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     text-align: left;
+  
     
 }
 
@@ -294,21 +333,34 @@ z-index: 10000;
 
 }
 
-#directbtn{
+#directbtn,
+button {
     display: block;
     margin: 0 auto;
-    padding: 5%;
     border: 1px solid black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: blue;
-    color: white;
-    font-weight: bold;
+   font-weight: bold;
     cursor: pointer;
     font-size: 1.15rem;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     border-radius: 5px;
-    border-width: 1px 1px 3px;2
+    border-width: 1px 1px 3px;
+    color: white;
    }
+
+   #directbtn {
+    background-color: blue;
+    padding: 2%;
+    margin-top: 5%;
+   
+   }
+
+   button{
+       margin-top: 5%;
+       padding: 3%;
+       background-color: forestgreen;
+       }
+   
 
 /* style about page */
 #about{
@@ -414,215 +466,6 @@ z-index: 10000;
 #mission p {
     text-shadow: none;
 }
-
-
-/* Design Pricing Page */
-#pricing {
-    padding-bottom: 0;
-}
-#contain{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 1;
-}
-
-h3{
-    text-align: center;
-    background-color: navy;
-    color: white;
-    padding: 15%;
-    margin-top:0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.25rem;
-    
-}
-
-div ul {
-    list-style-type: none;
-    color: black;
-    /* border: lightgrey solid 3px; */
-
-        text-align: center;
-
-}
-
-#contain section {
-    width: 40%;
-    border: gray solid 3px;
-    margin: 5%;
-    margin-top: 0;
-   
-} 
-
-#contain section ul{
-    padding-right: 5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    line-height: 2;
-  
-    
-    }
-    #contain section ul li{
-        border-bottom: gray 3px dashed;
-
-    }
-
-    #contain section ul li:last-child{
-        border-bottom: none;
-    }
-
-    #pricing h1{
-        text-shadow:none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2rem;
-        color:black;
-        margin-top:2%;
-
-    }
-#pricing h2{
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 5%;
-    
-}
-
-.price{
-    width: 300px;
-    height: 200px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 2%;
-}
-
-
-
-/* style form */
-
-form {
-    max-width: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: wheat;
-    position: relative;
-    left: 35vw;;
-    text-align: justify;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* padding-top: 2%; */
-    padding: 2%;
-    background-color: blue;
-    opacity: 0.65;
-    /* margin: 0 auto;
-    display: block; */
-    margin-top: 2%;
-    padding-right: 4%;
-    border: 2px solid black;
-   
-      
-  }
-  input#ref,
-  input#write{
-      padding:5px;
-      margin-left: 2%;
-  }
-
-  input#write{
-      margin-left: 4%;
-  }
-  /* .formsection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  } */
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-    background: rgba(255,255,255,0.1);
-    font-size: 18px;
-    margin: 5px;
-    outline: 0;
-    padding: 10px;
-    width: 100%;
-    background-color: #e8eeef;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    text-align: center;
-    margin-bottom: 10px;
-    color: black;
-   
-  }
-  
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin: 0;
-
-  }
-  
-  
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"]
-  input[type="number"] {
-    /* margin-left: 10px; */
-  }
-  
-  #comments {
-    margin-bottom: 30px;
-    margin-top:10px;
-    /* margin-left: 10px; */
-    
-  }
-
-
-  textarea{
-      margin-left: 0;
-  }
-
-  .radiobtn{
-      display: flex;
-      align-items: baseline;
-      margin-top: 2%;
-  }
-
-  .radiobtn input{
-      margin-right: 5px;
-  }
-  
-  button {
-    background: rgba(255,255,255,0.1);
-    padding: 15px 30px;
-    color: white;
-    background-color: tomato;
-    font-size: 25px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 100%;
-    border: 1px solid black;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  label {
-    display: inline-block;
-    margin:0;
-    /* margin-left: 10px; */
-    margin-top: 2%;
-   
-  }
-  
-  /* #formtitle {
-    text-decoration: none;
-    font-size: 30px;
-  } */
-
 /* media queries */
 
 @media screen and (min-width: 1200px) {
