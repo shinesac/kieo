@@ -747,7 +747,41 @@ form {
  
 }
 
+/* style portfolio page */
 
+video {
+    width: 100%;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    
+    background-image: linear-gradient(white, rgb(0,0,0));
+        padding: 1%;
+}
+video::-webkit-media-controls-panel {
+    width: 40px;
+  }
+.client p,
+#portfolio p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-shadow: none;
+}
+.client a{
+    text-decoration: none;
+   
+}
+
+.client h1{
+    color: firebrick;
+}
+
+.client {
+    content
+}
 @media screen and (max-width: 1199px) {
     nav ul {
         display: flex;
