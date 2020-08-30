@@ -69,10 +69,11 @@
     <main id="home">
        
         <!-- <h1>Please use our facebook page to book a free consultation!</h1> -->
-        
-        <p> Fill out the form below to request a free consultation</p>
-        <p>If you have any questions, call us at (865) 307-3944</p>
-
+        <div id="contactheading">
+        <h1> Fill out the form below to request a free consultation and
+        we will get back to you within 24 business hours of your request.</h1>    
+        <h2>If you have any questions, call us at (865) 307-3944.</h2>
+        </div>
 
         <form action="https://formspree.io/maypzqnv" name ="form" method="post" class="form">
            
@@ -139,73 +140,24 @@
                   <input type ="text" id="write" name="write">
                 </div>   
             </div><br>
-<!-- 
-            <div class="check">
-                <label for="features">What features are you looking for:</label> <br>
-                <input type="checkbox" name="features" id="slideshow" value="slideshow">
-                <label for="slideshow" class="space">Slideshow</label>
-                <input type="checkbox" name="features" id="gallery" value="gallery">
-                <label for="gallery" class="space">Gallery</label>
-                <input type="checkbox" name="features" id="video" value="video">
-                <label for="video" class="space">Video</label>
-                <input type="checkbox" name="features" id="contform" value="Contact Form">
-                <label for="contform" class="space">Contact Form</label>
-                <input type="checkbox" name="features" id="animation" value="animation">
-                <label for="animation" class="space">Custom Animation</label>
-                           
-                <input type="checkbox" name="hear" id="other" value="Other">
-                <label for="other" class="space">Other:</label>
-                <label for="write"></label>
-                <input type ="text" id="write" name="write">
-                
-          </div><br>
 
-          <div class="check">
-            <label for="services">Are you interested in the following services?</label> <br>
-            
-            <input type="checkbox" name="services" id="data" value="data reports">
-            <label for="data" class="space">Data Reports - $15/month or $120/year</label>
            
-            <input type="checkbox" name="services" id="maintainence" value="Website Maintainence">
-            <label for="maintainence" class="space">Website Maintainence - $60/year</label>
-           
-            <input type="checkbox" name="services" id="google" value="google">
-            <label for="google" class="space">Google Business Set-Up - Free</label>
-            
-            <input type="checkbox" name="features" id="domain" value="domain">
-            <label for="domain" class="space">Custom Domain Name - $12/year</label>
-            
-    
-            
-      </div><br>
-
-
-            <div>
-                <label for="pages">How many pages would you like your website to be?</label>
-                  <input type="number" id="pages" name="pages">
-
-            </div>
-
-            <div id="finance">
-                <label for="pay">Are you interested in an installment plan?</label> <br>
-                   <label for="yes" class="space">Yes</label>
-                  <input type="radio" name="yes" id="yes" value="Yes">
-                  <label for="no" class="space">No</label> 
-                  <input type="radio" name="no" id="no" value="No"> 
-            </div>
-            <label for="info">Short description of your organization:</label>
-          <textarea id="info" name="info"> </textarea> -->
         <label for="comments">Any additional information you think we should know:</label>
           <textarea id="comments" name="comments"> </textarea>
                         
-          <button type="submit" name="submit" class="submit" id="submit" onclick="reportClickHandler()">Request Your Free Consultation</button>
+          <button type="submit" name="submit" class="submit" id="submit" onclick="reportClickHandler()">Request Your Free Consultation!</button>
       
-      <!-- <p id="reqfield"><span style="color:red;font-weight:bold;">*</span>Required Fields</p> -->
+      
         </form>
         <div class="icon-bar">
             <a href="https://fb.com/book/kieowebsolutions/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
         </div>
     </main>    
+    <footer>
+        <img src="logo1.jpg" id="kieologo">
+        <p class="copyright"><small>&copy;2020 - Created by KIEO Web Solutions  </small></p>
+        <a href="mailto:kieowebsolutions@gmail.com?subject=website%inquiry"><i class="fa fa-envelope"> <small>kieowebsolutions@gmail.com</small></i></a>
+        <i class="fa fa-phone"><small> (865) 307-3944</small> </i>
     </footer>
 
 </body>
