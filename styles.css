@@ -78,12 +78,12 @@ main {
 }
 footer {
     display: flex;
-    margin: 1%;
     text-align: center; 
     flex-direction: column;
     justify-content: center;   
     line-height: 1.15;
-    padding: 0;
+    padding: 1%;
+    border-top: silver 3px solid;
    
 }
 
@@ -763,6 +763,12 @@ video {
 video::-webkit-media-controls-panel {
     width: 40px;
   }
+
+  #portfolio{
+      padding-bottom: 5%;
+  }
+
+
 .client p,
 #portfolio p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
