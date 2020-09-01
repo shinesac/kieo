@@ -211,7 +211,7 @@ z-index: 10000;
  /* Rotate last bar */
  .change .bar3 {
  -webkit-transform: rotate(45deg) translate(-15px, 10px) ;
- transform: rotate(45deg) translate(-20px, -20px);
+ transform: rotate(45deg) translate(-20px, -24px);
  }
 
    
@@ -783,6 +783,7 @@ video::-webkit-media-controls-panel {
         margin-top: 60%;
         min-height: 100vh;
         padding-bottom:10%;
+        padding-inline-start: 0;
      }   
      h1:first-of-type{
          margin-top:20%;
@@ -951,4 +952,32 @@ margin-top: 5%;
     
     overflow-y: hidden;
 }
+
+#contactheading h1 {
+    margin-top: 2%;
+}
+input,
+textarea,
+text {
+  max-width: 85vw;
+
+}
+
+
+
+textarea#comments,
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4%;
+
+}
+ form  {
+     margin-top:0;
+ }
+
+ button{
+     margin-top: 10%;
+ }
+
 }
