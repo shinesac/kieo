@@ -45,8 +45,8 @@ nav li {
    height: 90px;
    width: 90px;
    position: absolute;
-     top: 3%;
-   left: 1%;
+     top: 20px;
+   left: 3%;
    z-index: 10000;
 }
 .grow { 
@@ -185,7 +185,7 @@ footer p {
  
  .menu {
  position: absolute;
- top: 2%;
+ top: 10px;
  right: 2%;
  cursor: pointer;
  width: 80px;
@@ -254,6 +254,7 @@ z-index: 10000;
     background-color: whitesmoke;
     margin: 0;
     padding-top: 2%;
+    padding-right: 2%;
   
    
 }
@@ -397,8 +398,8 @@ z-index: 10000;
     font-size: 1.5rem;
     color: black;
     text-shadow: none;
-    margin-left:5%;
-    margin-right: 5%;
+    margin-left:3%;
+    margin-right: 3%;
 }
 
 #story h1{
@@ -411,12 +412,14 @@ z-index: 10000;
     background-color: orange;
     width: 80%;
     padding-top: 6%;
-    padding-right: 2%;
-    padding-left: 2%;
+  
 
 }
 
-
+#mission p,
+#vision p{
+    padding: 2%;
+    }
 #vision {
     background-color: royalblue;
     padding-bottom: 3%;
@@ -552,7 +555,6 @@ div ul {
     text-align: center;
     font-size: 1.25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* margin-bottom: 5%; */
     
 }
 
@@ -724,7 +726,38 @@ video::-webkit-media-controls-panel {
  
 /* media queries */
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    #navigation a{
+    font-size: 1.5rem;
+}
+
+#logo {
+    width: 65px;
+    height: 65px;
+    
+}
+}
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    #owner{
+    margin-top: 120px;
+}
+}
+
+@media screen and (max-width: 600px){
+    #description p,
+    #story p{
+        text-align: center;
+    }
+
+    .catch h1,{
+        font-size: 2rem;
+    }
+
+    .catch p{
+    font-size: 1.2rem
+}
+}
+@media screen and (min-width: 1000px) {
     nav {
         flex-direction: row;
         padding: 2%;
@@ -755,13 +788,27 @@ video::-webkit-media-controls-panel {
     .fa-caret-square-o-up{
         display: none;
     }
+
+    #statement {
+        padding-top:0;
+    }
 }
 
 
 
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 999px) {
+#contactheading h1,
+#contactheading h2
+{
+    font-size: 1rem;
 
+}
+
+.client p, 
+#portfolio p {
+    padding:2%;
+}
     nav ul {
         display: flex;
         flex-direction: column;
@@ -780,7 +827,7 @@ video::-webkit-media-controls-panel {
         z-index: 100;
         background-color: black;
         opacity: 0.85;
-        margin-top: 60%;
+        margin-top: 45px;
         min-height: 100vh;
         padding-bottom:10%;
         padding-inline-start: 0;
@@ -790,10 +837,7 @@ video::-webkit-media-controls-panel {
          
      }
 
-     .menu {
-         margin-top: 3%;
-     }
-
+   
      #services{
          display: block;
          
@@ -806,14 +850,13 @@ video::-webkit-media-controls-panel {
 
            
     header {
-        padding:18%;
+        padding:60px;
     }
 
     #logo{
         width: 65px;
         height: 65px;
         margin-left: 3%;
-        top: 4%;
     }
 
     #about,
@@ -824,13 +867,43 @@ video::-webkit-media-controls-panel {
     }
     
    #typing {
-       position: absolute;
-       top: 14%;
-       opacity: 0.3;
-       height: 700px;
+      
+       display: none;
    } 
 
-   #about h1,
+    #description{
+       content: "";
+    background-image: url('typing.jpg');
+    background-size: cover;
+    z-index: -1;
+    margin:0;
+    padding:0;
+
+   } 
+
+   #who{
+       background-color: white;
+       opacity: 0.7;
+       margin:0;
+
+   }
+
+   #who p{
+       padding-left: 3%;
+       padding-right: 3%;
+       padding-bottom: 3%;
+       
+   }
+
+   #about {
+       margin: 0;
+       padding:0;
+   }
+   #description h1{
+    padding-top:5%;
+    margin-top: 0;
+}
+
    #story h1{
        margin-bottom:2%;
        margin-top: 2%;
@@ -839,15 +912,31 @@ video::-webkit-media-controls-panel {
    #owner {
        width:100vw;
        margin: 0;
-       height: 400px;
+       height: 60vw;
        border-top: solid 3px black;
    }
    #statement {
-       width: 100%;
+       min-width: 100vw;
+       padding-bottom: 3%;
+       padding-top:0;
+    
+     
    }
-
+#statement p{
+    padding-left: 2%;
+    padding-right: 2%;
+}
    #mission h1 {
        margin-top: 0;
+   }
+
+   #vision p{
+       padding-right: 2%;
+       padding-left: 2%;
+   }
+
+   #wrapper{
+       min-width: 100vw;
    }
 #client p{
     margin-left: 1%;
