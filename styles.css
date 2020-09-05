@@ -791,6 +791,10 @@ video::-webkit-media-controls-panel {
     display: none;
 }
 
+#arrow p{
+    display: none;
+}
+
 
 @media screen and (max-width: 999px) {
 
